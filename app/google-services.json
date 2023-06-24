@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "5082267702",
+    "project_id": "kriptopedija-f50d2",
+    "storage_bucket": "kriptopedija-f50d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:5082267702:android:3cbde7e55d90f9f6745897",
+        "android_client_info": {
+          "package_name": "com.kriptopedija.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "5082267702-6clpu4o0b9jlpe5lbj0qs1sud1p2nmkc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kriptopedija.app",
+            "certificate_hash": "d8750401d2f7da991627402fcdd8ba1ae84118d6"
+          }
+        },
+        {
+          "client_id": "5082267702-hqq7p8sb18586vb98g8iu7ed66e2ptdu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBo1JKouWyISLO7LPZx0zQ2UHnANwCNMfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "5082267702-g1qvsqnfh48uft7kttv6seq2q2v4raoj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
