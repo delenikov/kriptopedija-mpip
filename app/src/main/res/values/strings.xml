@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Kriptopedija</string>
     <string name="sign_in">Sign in</string>
+    <string name="currencies">Cryptocurrencies</string>
 </resources>
