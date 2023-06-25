@@ -14,8 +14,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.firebase.auth.FirebaseAuth
 
 class HomeActivity : AppCompatActivity() {
@@ -30,7 +28,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
         createNotificationChannel()
 
-        auth = FirebaseAuth.getInstance();
+        auth = FirebaseAuth.getInstance()
 
         val email = intent.getStringExtra("email")
         val displayName = intent.getStringExtra("name")
@@ -47,7 +45,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         findViewById<Button>(R.id.continueButton).setOnClickListener {
-            val intent: Intent = Intent(this, StartActivity::class.java)
+            val intent = Intent(this, StartActivity::class.java)
             startActivity(intent)
         }
     }

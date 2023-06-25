@@ -9,14 +9,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.kriptopedija.app.R
 import com.kriptopedija.app.domain.model.Cryptocurrency
 
-class CryptocurrencyAdapter (
+class CryptocurrencyAdapter(
     private val currencies: ArrayList<Cryptocurrency> = ArrayList(),
     private val onClickListener: OnClickListener
 ) :
     RecyclerView.Adapter<CryptocurrencyAdapter.CryptocurrenciesViewHolder>() {
 
     interface OnClickListener {
-        fun onClickItem(movieId: String)
+        fun onClickItem(currencyId: String)
     }
 
     class CryptocurrenciesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -28,8 +28,8 @@ class CryptocurrencyAdapter (
             currency: Cryptocurrency,
             onClickListener: OnClickListener
         ) {
-            currencyName.text = currency.name.toString()
-            currencyPrice.text = currency.price.toString()
+            currencyName.text = currency.name
+            currencyPrice.text = currency.price
             when (currency.photo) {
                 "bitcoin" -> currencyPhoto.setImageResource(R.drawable.bitcoin)
                 "ethereum" -> currencyPhoto.setImageResource(R.drawable.ethereum)
@@ -67,9 +67,7 @@ class CryptocurrencyAdapter (
 
     fun updateCurrencies(currencies: List<Cryptocurrency>) {
         this.currencies.clear()
-        if (currencies != null) {
-            this.currencies.addAll(currencies)
-        }
+        this.currencies.addAll(currencies)
         notifyDataSetChanged()
     }
 }

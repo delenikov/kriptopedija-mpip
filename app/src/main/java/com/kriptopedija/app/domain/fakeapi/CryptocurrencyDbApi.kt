@@ -11,8 +11,23 @@ class CryptocurrencyDbApi {
         return currencies
     }
 
-    fun addCurrency(name: String, price:String, hourDifference: String, dayDifference: String, weekDifference: String, photo: String) {
-        val newCurrency = Cryptocurrency(currencies.size, name, price, hourDifference, dayDifference, weekDifference, photo)
+    fun addCurrency(
+        name: String,
+        price: String,
+        hourDifference: String,
+        dayDifference: String,
+        weekDifference: String,
+        photo: String
+    ) {
+        val newCurrency = Cryptocurrency(
+            currencies.size,
+            name,
+            price,
+            hourDifference,
+            dayDifference,
+            weekDifference,
+            photo
+        )
         currencies.add(newCurrency)
     }
 }

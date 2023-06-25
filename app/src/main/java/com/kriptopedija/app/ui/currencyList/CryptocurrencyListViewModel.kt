@@ -9,7 +9,8 @@ import com.kriptopedija.app.domain.repository.CryptocurrencyRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class CryptocurrencyListViewModel (private val cryptocurrencyRepository: CryptocurrencyRepository): ViewModel() {
+class CryptocurrencyListViewModel(private val cryptocurrencyRepository: CryptocurrencyRepository) :
+    ViewModel() {
 
     private val currenciesLiveData = MutableLiveData<List<Cryptocurrency>>()
 
